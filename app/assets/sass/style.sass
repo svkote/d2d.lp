@@ -1,0 +1,124 @@
+@font-face
+    font-family: 'officinaserifcbold'
+    src: url('../fonts/WebFont.eot')
+    src: url('../fonts/officinaserifc-bold-webfont.woff') format('woff')
+    font-weight: bold
+    font-style: normal
+@font-face
+    font-family: 'officinaserifcregular'
+    src: url('../fonts/WebFont.eot')
+    src: url('../fonts/officinaserifc-book-webfont.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+
+
+
+
+body
+    color: #787878
+    text-align: left
+    font: 13px/1.5 Arial,"Helvetica CY","Nimbus Sans L",sans-serif
+    background: #ece9e2
+    min-width: 990px
+    -webkit-font-smoothing: antialiased
+    background-color: #eeeae5
+    padding: 0
+    margin: 0
+
+html, body, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, legend
+    margin: 0
+    padding: 0
+    border: 0
+    outline: 0
+    font-weight: normal
+    vertical-align: baseline
+    background: transparent
+    font-size: 100%
+li
+    list-style-type: none
+
+.clearfix
+    position: relative
+
+.clearfix::after, .brick:after, .likes-ext:after, .container:after, .content-wrap:after, .container4:after, .header .links:after, .head-bar:after, .head-bar .nav:after, .head-bar .cabinet:after, .footer-links ul:after, .sub-footer-wrap:after, .columns:after 
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+    line-height: 0
+    font-size: .1px
+
+h1, h2 
+    font-family: 'officinaserifcbold'
+    font-size: 41px
+    line-height: 1.18
+    margin-bottom: 14px
+h1, h2, h3, h4, h5 
+    color: #282828
+    font-weight: normal
+
+.header
+    position: relative
+    min-width: 995px
+    border-top: 1px solid #505050
+    background: #282828
+    &-bar
+        position: relative
+        color: #fff
+        width: 980px
+        margin: 0 auto
+        line-height: 22px
+        height: 46px
+        .menu
+            margin: 0 auto
+            font-size: 12px
+            padding-top: 5px
+            float: right
+            z-index: 10
+            background: transparent
+            li
+                float: left
+                position: relative
+                padding: 0 4px
+                -moz-border-radius: 4px 4px 0 0
+                -webkit-border-radius: 4px 4px 0 0
+                border-radius: 4px 4px 0 0
+                display: inline-block
+                vertical-align: top
+                a
+                    text-decoration: underline
+                    padding: 8px 5px 11px
+                    font-weight: bold
+                    position: relative
+                    display: block
+                    white-space: nowrap
+                    color: #fff
+                    outline: none
+                    &:hover
+                        color: #ed7703
+        .logo img
+            height: 40px
+            float: left
+            display: block
+            text-indent: 100%
+            overflow: hidden
+            position: absolute
+            z-index: 10
+            left: 0
+            top: 4px
+            margin-left: 14px
+
+
+// контент
+
+.content
+    padding-top: 22px
+    background-color: #eeeae5
+    &-wrap
+        width: 960px
+        margin: 0 auto
+        padding: 0 10px
+        .title
+            padding: 0 22px
+            margin-right: 0
