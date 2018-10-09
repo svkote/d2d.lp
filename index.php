@@ -204,19 +204,19 @@
         <h3 class="title_vac" id="common">Заполни анкету</h3>
 
 
-<form class="elementor-form" method="post">
+<form class="form" method="post" action="mail.php">
     <div>
         <div>
-            <label for="form-field-">ФИО</label>
-            <input type="text" name="form_fields[name]" id="form-field-name" required="1" aria-required="true">
+            <label for="name">ФИО</label>
+            <input type="text" name="name" id="name" required="1" aria-required="true">
         </div>
         <div>
-            <label for="form-field-">Возраст</label>
-            <input size="1" type="number" name="form_fields[email]" id="form-field-email"required="1" aria-required="true"> 
+            <label for="age">Возраст</label>
+            <input size="1" type="number" name="age" id="age" required="1" aria-required="true"> 
         </div>
         <div>
-            <label for="form-field-">Город</label>
-                <select name="form_fields[field_2]" id="form-field-field_2" required="1" aria-required="true">
+            <label for="city">Город</label>
+                <select name="city" id="city" required="1" aria-required="true">
                     <option value="Архангельск">Архангельск</option>
                     <option value="Астрахань">Астрахань</option>
                     <option value="Брянск">Брянск</option>
@@ -258,20 +258,22 @@
                 </select>
         </div>
         <div>
-            <label for="form-field-">Телефон</label>
-            <input type="tel" name="form_fields[message]"placeholder="+7(999)999-99-99" required="1" aria-required="true"> 
+            <label for="phone">Телефон</label>
+            <input type="tel" name="phone" id="phone" placeholder="+7(999)999-99-99" required="1" aria-required="true"> 
         </div>
         <div>
-            <label for="form-field-">Откуда узнали о вакансии</label>
-            <input type="text" required="1" aria-required="true"> 
+            <label for="source">Откуда узнали о вакансии</label>
+            <input type="text" required="1" aria-required="true" id="source" name="source"> 
         </div>
         <div>
-            <button type="submit"  class="button button_send">
+            <button type="submit"  class="button button_send" name="submit">
                 <span>Отправить </span>
             </button>
         </div>
     </div>
 </form>
+
+
 
     </div>
 
@@ -371,8 +373,6 @@
                     <div id="city40" class="citylist" style="display: none;">ул. Победы, 14 А <br> 8-962-213-09-79</div>
             </div>
         </div>
-
-        
     </div>
         
 
