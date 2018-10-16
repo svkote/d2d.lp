@@ -159,7 +159,7 @@ input[type='text'], input[type='password'], input[type='search'], .input input, 
 }
 
 input, textarea, select, a, button {
-  outline: none !important;
+  outline: none;
 }
 
 .form-phone-box input, .input input, input[type='text'], input[type='password'], input[type='search'] {
@@ -690,4 +690,13 @@ h1, h2, h3, h4, h5 {
   width: 195px;
   display: inline-block;
   padding-top: 10px;
+}
+
+input.valid {
+  outline: 1px solid #4bb705;
+  background-color: #4bb705;
+}
+
+input.invalid {
+  outline: 1px solid #ff8b00;
 }

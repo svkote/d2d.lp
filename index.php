@@ -14,36 +14,16 @@
     <link rel="dns-prefetch" href="https://s.w.org/">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="assets/sass/style.css">
-    <!-- Google Tag Manager for WordPress by gtm4wp.com -->
-    <script data-cfasync="false" type="text/javascript">
-        //<![CDATA[
-        dataLayer.push({
-            "pagePostType": "frontpage",
-            "pagePostType2": "single-page",
-            "pagePostAuthor": "Admin"
-        }); //]]>
-
+   <!-- Google Tag Manager -->
+    <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KN85JQ3');
     </script>
+<!-- End Google Tag Manager -->
 
-    <script data-cfasync="false">
-        //<![CDATA[
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                '//www.googletagmanager.com/gtm.' + 'js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-KN85JQ3'); //]]>
-
-    </script>
-    <!-- End Google Tag Manager -->
 
     <!-- Google Tag Manager -->
     <script>
@@ -103,6 +83,10 @@
 </head>
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZNM4BP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 
     <header class="header">
@@ -212,7 +196,7 @@
         </div>
         <div>
             <label for="age">Возраст</label>
-            <input size="1" type="number" name="age" id="age" required="1" aria-required="true"> 
+            <input size="1" type="number" name="age" id="age" required="1" aria-required="true" min="16" max="80"> 
         </div>
         <div>
             <label for="city">Город</label>
@@ -259,14 +243,14 @@
         </div>
         <div>
             <label for="phone">Телефон</label>
-            <input type="tel" name="phone" id="phone" placeholder="+7(999)999-99-99" required="1" aria-required="true"> 
+            <input type="tel" name="phone" id="phone" placeholder="79999999999" required="1" aria-required="true" min="79000000000" max="89999999999"> 
         </div>
         <div>
             <label for="source">Откуда узнали о вакансии</label>
             <input type="text" required="1" aria-required="true" id="source" name="source"> 
         </div>
         <div>
-            <button type="submit"  class="button button_send" name="submit">
+            <button type="submit"  class="button button_send" name="button1" id="button_submit" onclick="dataLayer.push({'event': 'button1-click'});">
                 <span>Отправить </span>
             </button>
         </div>
@@ -341,7 +325,7 @@
                     <div id="city8" class="citylist" style="display: none;">ул. Степана Разина,16А <br> 8-909-700-77-07</div>
                     <div id="city9" class="citylist" style="display: none;">ул. Красновгардейская, 14 <br> 8-980-682-68-80</div>
                     <div id="city10" class="citylist" style="display: none;">ул. Урицкого, 2 <br> 8-964-111-99-79</div>
-                    <div id="city11" class="citylist" style="display: none;">ул. Гвардейская,54Е <br> 8-965-628-88-08</div>
+                    <div id="city11" class="citylist" style="display: none;">ул. Гвардейская,54Е <br> 8-963-012-20-29</div>
                     <div id="city12" class="citylist" style="display: none;">Ленинский пр-т 30а, к. б, 3 этаж <br> 8-981-460-86-32</div>
                     <div id="city13" class="citylist" style="display: none;">ул. Циолковского, 4 <br> 8-980-682-68-80</div>
                     <div id="city14" class="citylist" style="display: none;">ул. Ноградская,5 <br> 8-905-947-36-91</div>
@@ -354,12 +338,12 @@
                     <div id="city21" class="citylist" style="display: none;">ул. Кулибина, 3 <br> 8-969-601-96-50</div>
                     <div id="city22" class="citylist" style="display: none;">пр-кт Карла Маркса, 41/40 <br> 8-905-921-70-43</div>
                     <div id="city23" class="citylist" style="display: none;">Бульвар Победы, 2 <br> 8-962-476-57-00</div>
-                    <div id="city24" class="citylist" style="display: none;">ул. Дзержинского,1, кор.27 <br> 8-967-374-95-28</div>
+                    <div id="city24" class="citylist" style="display: none;">ул. Дзержинского,1, кор.27 <br> 8-963-012-20-29</div>
                     <div id="city25" class="citylist" style="display: none;">ул. Дунаевского, 26 <br> 8-962-447-77-76</div>
                     <div id="city26" class="citylist" style="display: none;">ул. Большая Садовая, 58/30 <br> 8-903-439-01-01</div>
                     <div id="city27" class="citylist" style="display: none;">ш. Московское,2Б <br> 8-906-125-38-98</div>
                     <div id="city28" class="citylist" style="display: none;">21-я линия В.О. д. 6а <br> 8-906-228-96-15 <br>8-921-097-76-44</div>
-                    <div id="city29" class="citylist" style="display: none;">ул.Чернышевского,52Б <br> 8-937-816-11-44</div>
+                    <div id="city29" class="citylist" style="display: none;">ул.Чернышевского,52Б <br> 8-965-886-18-84</div>
                     <div id="city30" class="citylist" style="display: none;">ул. Кашена, 6 <br> 8-906-517-94-70</div>
                     <div id="city31" class="citylist" style="display: none;">ул. Конституции СССР,4 <br> 8-903-439-01-01</div>
                     <div id="city32" class="citylist" style="display: none;">ул. Ленина, 244 <br> 8-962-449-52-99</div>
@@ -367,9 +351,9 @@
                     <div id="city34" class="citylist" style="display: none;">ул.Фрунзе,2А <br> 8-906-125-38-98</div>
                     <div id="city35" class="citylist" style="display: none;">ул. Тургеневская 69 оф. 219 <br> 8-905-189-52-02</div>
                     <div id="city36" class="citylist" style="display: none;">ул. Пермякова,1 <br> 8-905-820-07-59</div>
-                    <div id="city37" class="citylist" style="display: none;">пр-кт Нариманова, 1 стр 1 <br> 8-937-816-11-44</div>
+                    <div id="city37" class="citylist" style="display: none;">пр-кт Нариманова, 1 стр 1 <br> 8-903-339-39-11</div>
                     <div id="city38" class="citylist" style="display: none;">ул. Волочаевская, 133 <br> 8-909-801-40-86</div>
-                    <div id="city39" class="citylist" style="display: none;">ул. Ленина 123а <br> 8-906-297-45-56</div>
+                    <div id="city39" class="citylist" style="display: none;">ул. Ленина 123а <br> 8-962-119-15-15</div>
                     <div id="city40" class="citylist" style="display: none;">ул. Победы, 14 А <br> 8-962-213-09-79</div>
             </div>
         </div>
@@ -390,8 +374,17 @@
             <p>Билайн © 2015.</p>
         </div>
     </div>
+    <script>
+    dataLayer.push({
+        'event': 'button1-click',
+        'eventCategory': 'beeline_personal',
+        'eventAction': 'cv_success',
+        'eventLabel': 'rabotad2d.ru'
+        });
+    </script>
     
     <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/valid.js"></script>
 </body>
 
 </html>
